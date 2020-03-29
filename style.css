@@ -1,11 +1,14 @@
 body {
     margin: 0 auto;
-    background-color: #4096ee;
+    font-family: Arial;
+    background-image: url(./image/khalfia.jpg);
+    background-size: cover;
+    
 }
 
 .zone {
     /*padding:30px 50px;*/
-    /*cursor:pointer;*/
+    cursor:pointer;
     color:#FFF;
     font-size:2em;
     border-radius:4px;
@@ -49,19 +52,26 @@ a {
     color: #f5f5f6;
     text-decoration: none;
 }
-    
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
 /***********************************************************************
  *  Cover
  **********************************************************************/
 .container {
     /*show heigh: auto*/
-    height: 50vh; 
+    height: 70vh; 
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-   font-style: italic;
+}
+
+.cover {
+    width: 30rem;
 }
 
 /***********************************************************************
@@ -71,25 +81,51 @@ a {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     grid-gap: 20px;
+    padding: 20px;
+justify-self: center;
+text-align: center;
 }
-.buttan {
-    color:white;
+.image2 {
+    text-align: center;
 }
+.image3 {
+    text-align: center;
+}
+h1 {
+    color: rgba(231, 17, 17, 0.8);
+}
+
+
 .box {
-    background-color: #444;
+    background-color: rgb(232, 225, 235);
     padding: 130px;
     margin: 20px;
 }
-a {
-    color: black;
+p {
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    color: white;
+}
+.box > img {
+    width: 100%;
+}
+.rida {
+    text-align: center;
+    padding: 50px;
+    font-size: 50px;
+}
+
+.box:hover {
+    -webkit-transform: rotate(-7deg);
+    -moz-transform: rotate(-7deg);
+    -o-transform: rotate(-7deg);
+    transform: rotate(-7deg);
 }
 
 .box > img {
     width: 100%;
-}
-.img {
-    align-items: center;
-    
+    height: auto;
 }
 
 /***********************************************************************
@@ -97,6 +133,7 @@ a {
  **********************************************************************/
 footer {
     text-align: center;
+    background-color: #444;
 }
 
 /*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
@@ -151,3 +188,4 @@ footer {
     background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
     background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
 }
+
